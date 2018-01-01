@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.burgas_landmarks.FinalScreen"
+    android:background="@drawable/seafinal" >
+
+    <TextView
+        android:id="@+id/RESULT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="94dp"
+        android:text="@string/YourResult"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/ResultBlank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RESULT"
+        android:layout_alignBottom="@+id/RESULT"
+        android:layout_toRightOf="@+id/RESULT"
+        android:text="@string/BlankSmall"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/RankBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+      android:onClick="goSave"
+        android:text="@string/add" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RankBtn"
+        android:layout_alignLeft="@+id/RESULT"
+        android:layout_marginBottom="19dp"
+        android:text="@string/addname"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/NameBlank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Name"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/Name"
+        android:ems="10"
+        android:hint="Въведи име" />
+
+    <Button
+        android:id="@+id/goRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RankBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="goRank"
+        android:text="Ранклиста" />
+
+<Button
+    android:id="@+id/tryAgain"
+    android:layout_width="100dp"
+    android:layout_height="70dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/buttonshape"
+    android:minHeight="30dp"
+    android:onClick="tryAgain"
+    android:text="Опитай пак"
+    android:textColor="@android:color/holo_blue_dark"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/endApp"
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/buttonshape2"
+    android:onClick="toEnd"
+    android:text="@string/Final"
+    android:textColor="#F0FF24"
+    android:textSize="20sp" />
+
+</RelativeLayout>

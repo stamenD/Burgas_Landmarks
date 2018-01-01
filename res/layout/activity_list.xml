@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.burgas_landmarks.List" 
+    android:background="@drawable/grass"
+    >
+
+    <TableLayout
+        android:id="@+id/TableLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/Category1" 
+            android:onClick="Category1"
+            android:background="@drawable/buttonshape"/>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TableLayout02"
+        android:layout_alignRight="@+id/TableLayout02"
+        android:layout_below="@+id/TableLayout02" >
+
+        <Button 
+            android:background="@drawable/buttonshape"
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/Category2"
+            android:onClick="Category2" />
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TableLayout03"
+        android:layout_alignRight="@+id/TableLayout03"
+        android:layout_below="@+id/TableLayout03" >
+
+        <Button
+             android:background="@drawable/buttonshape"
+            android:id="@+id/Button04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/Category3"
+            android:onClick="Category3" />
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TableLayout04"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TableLayout04" >
+
+        <Button
+             android:background="@drawable/buttonshape"
+            android:id="@+id/Button03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/Category4" 
+            android:onClick="Category4"/>
+    </TableLayout>
+
+    <Button
+    android:id="@+id/endApp"
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/buttonshape2"
+    android:onClick="INFO"
+    android:text="@string/more_info"
+    android:textColor="#F0FF24"
+    android:textSize="20sp" />
+
+</RelativeLayout>

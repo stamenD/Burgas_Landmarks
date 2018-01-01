@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sea"
+    tools:context="com.example.burgas_landmarks.MainActivity" >
+
+    <Button
+        android:id="@+id/start"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:onClick="startButton"
+        android:text="@string/button_start"
+        android:textColor="#F0FF24"
+        android:textSize="30sp"
+        android:layout_width="250dp"
+android:layout_height="50dp"
+android:background="@drawable/buttonshape" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="126dp"
+        android:paddingLeft="40dp"
+        android:text="@string/introduction"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+</RelativeLayout>
